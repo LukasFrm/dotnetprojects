@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lukas\\Desktop\\Projects\\gradebook\\src\\GradeBook\\GradeBook.csproj": {}
+    "C:\\Users\\lukas\\Desktop\\Projects\\gradebook\\src\\gradebook\\GradeBook.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lukas\\Desktop\\Projects\\gradebook\\src\\GradeBook\\GradeBook.csproj": {
+    "C:\\Users\\lukas\\Desktop\\Projects\\gradebook\\src\\gradebook\\GradeBook.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lukas\\Desktop\\Projects\\gradebook\\src\\GradeBook\\GradeBook.csproj",
+        "projectUniqueName": "C:\\Users\\lukas\\Desktop\\Projects\\gradebook\\src\\gradebook\\GradeBook.csproj",
         "projectName": "GradeBook",
-        "projectPath": "C:\\Users\\lukas\\Desktop\\Projects\\gradebook\\src\\GradeBook\\GradeBook.csproj",
+        "projectPath": "C:\\Users\\lukas\\Desktop\\Projects\\gradebook\\src\\gradebook\\GradeBook.csproj",
         "packagesPath": "C:\\Users\\lukas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lukas\\Desktop\\Projects\\gradebook\\src\\GradeBook\\obj\\",
+        "outputPath": "C:\\Users\\lukas\\Desktop\\Projects\\gradebook\\src\\gradebook\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lukas\\AppData\\Roaming\\NuGet\\NuGet.Config",
