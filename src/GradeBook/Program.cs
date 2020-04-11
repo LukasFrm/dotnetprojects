@@ -10,7 +10,6 @@
             book.AddGrade(92);
             book.AddGrade(12);
             book.ShowStats();
-
         }
     }
 }  
