@@ -94,3 +94,6 @@ C:\Users\lukas\Desktop\Projects\.NET projects\Pluralsight tuts\test\GradeBook.Te
 C:\Users\lukas\Desktop\Projects\.NET projects\Pluralsight tuts\test\GradeBook.Tests\obj\Debug\netcoreapp3.1\GradeBook.Tests.dll
 C:\Users\lukas\Desktop\Projects\.NET projects\Pluralsight tuts\test\GradeBook.Tests\obj\Debug\netcoreapp3.1\GradeBook.Tests.pdb
 C:\Users\lukas\Desktop\Projects\.NET projects\Pluralsight tuts\test\GradeBook.Tests\obj\Debug\netcoreapp3.1\GradeBook.Tests.genruntimeconfig.cache
+C:\Users\lukas\Desktop\Projects\.NET projects\Pluralsight tuts\test\GradeBook.Tests\bin\Debug\netcoreapp3.1\Gradebook.exe
+C:\Users\lukas\Desktop\Projects\.NET projects\Pluralsight tuts\test\GradeBook.Tests\bin\Debug\netcoreapp3.1\Gradebook.dll
+C:\Users\lukas\Desktop\Projects\.NET projects\Pluralsight tuts\test\GradeBook.Tests\bin\Debug\netcoreapp3.1\Gradebook.pdb
