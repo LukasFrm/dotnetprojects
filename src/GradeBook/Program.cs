@@ -14,6 +14,8 @@
             System.Console.WriteLine($"Lowest grade is {stats.Low}");
             System.Console.WriteLine($"Highest grade is {stats.High}");
             System.Console.WriteLine($"Average grade is {stats.Average}");
+
+
         }
     }
 }  

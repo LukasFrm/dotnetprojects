@@ -4,12 +4,12 @@
     "C:\\Users\\lukas\\Desktop\\Projects\\.NET projects\\Pluralsight tuts\\test\\GradeBook.Tests\\GradeBook.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lukas\\Desktop\\Projects\\.NET projects\\Pluralsight tuts\\src\\GradeBook\\Gradebook.csproj": {
+    "C:\\Users\\lukas\\Desktop\\Projects\\.NET projects\\Pluralsight tuts\\src\\GradeBook\\GradeBook.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lukas\\Desktop\\Projects\\.NET projects\\Pluralsight tuts\\src\\GradeBook\\Gradebook.csproj",
-        "projectName": "Gradebook",
-        "projectPath": "C:\\Users\\lukas\\Desktop\\Projects\\.NET projects\\Pluralsight tuts\\src\\GradeBook\\Gradebook.csproj",
+        "projectUniqueName": "C:\\Users\\lukas\\Desktop\\Projects\\.NET projects\\Pluralsight tuts\\src\\GradeBook\\GradeBook.csproj",
+        "projectName": "GradeBook",
+        "projectPath": "C:\\Users\\lukas\\Desktop\\Projects\\.NET projects\\Pluralsight tuts\\src\\GradeBook\\GradeBook.csproj",
         "packagesPath": "C:\\Users\\lukas\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\lukas\\Desktop\\Projects\\.NET projects\\Pluralsight tuts\\src\\GradeBook\\obj\\",
         "projectStyle": "PackageReference",
@@ -79,8 +79,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\lukas\\Desktop\\Projects\\.NET projects\\Pluralsight tuts\\src\\GradeBook\\Gradebook.csproj": {
-                "projectPath": "C:\\Users\\lukas\\Desktop\\Projects\\.NET projects\\Pluralsight tuts\\src\\GradeBook\\Gradebook.csproj"
+              "C:\\Users\\lukas\\Desktop\\Projects\\.NET projects\\Pluralsight tuts\\src\\GradeBook\\GradeBook.csproj": {
+                "projectPath": "C:\\Users\\lukas\\Desktop\\Projects\\.NET projects\\Pluralsight tuts\\src\\GradeBook\\GradeBook.csproj"
               }
             }
           }
