@@ -9,7 +9,7 @@ namespace GradeBook.Tests
         [Fact]
         public void checkAddGrade() {
             var book = new Book("");
-            book.AddGrade(105);
+            book.AddGrade(10);
             Assert.Equal(10, book.grades[0]);
         }
 
