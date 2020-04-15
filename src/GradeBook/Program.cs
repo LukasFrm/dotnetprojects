@@ -2,7 +2,6 @@
 
 namespace GradeBook
 {
-
     class Program
     {
         static void Main(string[] args)
@@ -18,6 +17,7 @@ namespace GradeBook
                 {
                     break;
                 }
+
 
                 try
                 {
@@ -44,6 +44,7 @@ namespace GradeBook
 
             var stats = book.GetStats();
 
+            System.Console.WriteLine($"Current book category is {Book.CATEGORY}");
             System.Console.WriteLine($"Lowest grade is {stats.Low}");
             System.Console.WriteLine($"Highest grade is {stats.High}");
             System.Console.WriteLine($"Average grade is {stats.Average}");

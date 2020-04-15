@@ -97,7 +97,29 @@ namespace GradeBook {
             Name = bookName;
         }
         public List<double> grades;
-        public string Name;
+        public const string CATEGORY = "Science";
+        private string name;
+        public string Name {
+            get {
+                return name;
+            }
+            set
+            {
+                if (!String.IsNullOrEmpty(value))
+                {
+                    try
+                    {
+                        name = value;
+
+                    }
+                    catch (FormatException ex)
+                    {
+                        System.Console.WriteLine(ex.Message);
+                    }
+                }
+
+            }
+        }
 
     }
 }

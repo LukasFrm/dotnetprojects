@@ -3,9 +3,21 @@ using Xunit;
 
 namespace GradeBook.Tests
 {
+
+    public delegate string WriteLogDelegate(string logMessage);
     public class TypeTests
     {
 
+        [Fact]
+        public void WriteLogDelegateCanPointToMethod()
+        {
+            var log = new WriteLogDelegate(ReturnMessage);
+            var result = log("Some string");
+            Assert.Equal("Some string", result);
+        }
+        string ReturnMessage(string message) {
+            return message;
+        }
         [Fact]
         public void checkAddGrade() {
             var book = new Book("");
@@ -46,7 +58,6 @@ namespace GradeBook.Tests
         {
             var integer1 = 10;
             var integer2 = 2;
-            var firstIntegerDivided = 5;
             divideNumbersWithRef(ref integer1, integer2);
             Assert.Equal(5, integer1);
         }
