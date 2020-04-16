@@ -4,20 +4,26 @@ namespace GradeBook
 {
     class Program
     {
-        public delegate void StringDelegate(string text);
-        static void ToUpperCase(string text) => Console.WriteLine(text.ToUpper());
-        static void ToLowerCase(string text) => Console.WriteLine(text.ToLower());
         static void Main(string[] args)
         {
-            StringDelegate log1 = ToUpperCase;
-            log1("This is uppercase");
-            StringDelegate log2 = ToLowerCase;
-            log2("This is lowercase");
 
-            Book book = new Book("My book");
+            InMemoryBook book = new InMemoryBook("My book");
             book.GradeAdded += OnGradeAdded;
+            book.Name = "Changed name";
 
+            EnterGrades(book);
 
+            var stats = book.GetStats();
+
+            System.Console.WriteLine($"Current book category is {InMemoryBook.CATEGORY}");
+            System.Console.WriteLine($"Lowest grade is {stats.Low}");
+            System.Console.WriteLine($"Highest grade is {stats.High}");
+            System.Console.WriteLine($"Average grade is {stats.Average}");
+            System.Console.WriteLine($"The letter grade is {stats.Letter}");
+        }
+
+        private static void EnterGrades(IBook book)
+        {
             while (true)
             {
 
@@ -28,13 +34,10 @@ namespace GradeBook
                 {
                     break;
                 }
-
-
                 try
                 {
                     var grade = double.Parse(input);
                     book.AddGrade(grade);
-
                 }
 
                 catch (ArgumentException ex)
@@ -47,19 +50,9 @@ namespace GradeBook
                 }
                 finally
                 {
-                    var combinedString = string.Join(",", book.grades.ToArray());
-
-                    System.Console.WriteLine($"Your grades are: {combinedString}");
+                    System.Console.WriteLine($"***********");
                 }
             }
-
-            var stats = book.GetStats();
-
-            System.Console.WriteLine($"Current book category is {Book.CATEGORY}");
-            System.Console.WriteLine($"Lowest grade is {stats.Low}");
-            System.Console.WriteLine($"Highest grade is {stats.High}");
-            System.Console.WriteLine($"Average grade is {stats.Average}");
-            System.Console.WriteLine($"The letter grade is {stats.Letter}");
         }
 
         static void OnGradeAdded(object sender, EventArgs args) {
