@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 
 namespace GradeBook
 {
@@ -36,6 +37,43 @@ namespace GradeBook
         public abstract event GradeAddedDelegate GradeAdded;
         public abstract void AddGrade(double grade);
         public abstract Statistics GetStats();
+
+        public class DiskBook : Book, IBook
+    {
+        public DiskBook(string name) : base(name)
+        {
+        }
+
+        public override event GradeAddedDelegate GradeAdded;
+
+        public override void AddGrade(double grade)
+        {
+            using (var writer = File.AppendText($"{Name}.txt"))
+            {
+                writer.WriteLine(grade);
+                if (GradeAdded != null)
+                {
+                    GradeAdded(this, new EventArgs());
+                }
+            }
+        }
+
+            public override Statistics GetStats()
+            {
+                var result = new Statistics();
+                using (var reader = File.OpenText($"{Name}.txt"))
+                {
+                    var line = reader.ReadLine();
+                    while (line != null)
+                    {
+                        var number = double.Parse(line);
+                        result.Add(number);
+                        line = reader.ReadLine();
+                    }
+                }
+                return result;
+            }
+        }
     }
 
 
@@ -63,19 +101,12 @@ namespace GradeBook
             }            
         }
 
-        public override event GradeAddedDelegate GradeAdded;
-
         public override Statistics GetStats()
         {
-            var result = new Statistics();
-            
-            for(var index = 0; index < grades.Count; index += 1)
-            {
-                result.Add(grades[index]);                            
-            }
-                
-            return result;
+            throw new NotImplementedException();
         }
+
+        public override event GradeAddedDelegate GradeAdded;
 
         private List<double> grades;
         
